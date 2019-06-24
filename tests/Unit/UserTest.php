@@ -46,7 +46,6 @@ class UserTest extends TestCase
         $data = User::create($this->data);
         $object = new User();
         $data = $object->getUserByEmail($data['email']);
-//        print_r($data);exit;
         $this->assertNotEmpty($data);
     }
 
